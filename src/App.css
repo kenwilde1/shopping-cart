@@ -1,38 +1,359 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fjalla One", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.home-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+  color: whitesmoke;
+}
+
+.landing-info {
+  height: 32vh;
+  width: 50vw;
+  background: #4373f7;
+  border: 1px solid grey;
+  border-radius: 50px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-info h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.landing-info p {
+  margin-top: 20px;
+  font-size: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.landing-info h3 {
+  margin-top: 15px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.landing-info button {
+  background: none;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  background: #234463;
+  color: white;
+  position: fixed;
+  top: 0;
+}
+
+.header-content {
+  width: 100vw;
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content h1 {
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+
+.header-content .pages {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-right: 4rem;
+}
+
+.header-content .cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  gap: 1rem;
+}
+
+.header-content .cart-button {
+  border: none;
+  background: none;
+  color: white;
+}
+
+.header-content .cart-button:hover {
+  color: whitesmoke;
+}
+
+.header-style {
+  display: flex;
+  flex-direction: row;
+}
+
+.pages {
+  display: flex;
+}
+
+.pages button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.pages button:hover {
+  color: whitesmoke;
+  transform: scale(1.05);
+}
+
+.red {
+  height: 0.5vh;
+  width: 20vw;
+  background: #f5372a;
+  border-top: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.yellow {
+  height: 0.5vh;
+  width: 20vw;
+  background: #d5d911;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.blue {
+  height: 0.5vh;
+  width: 20vw;
+  background: #0727f5;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.lime {
+  height: 0.5vh;
+  width: 20vw;
+  background: #04b51b;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.pink {
+  height: 0.5vh;
+  width: 20vw;
+  background: #d67acd;
+  border-top: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 120px 50px;
+  padding: 20px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.5s ease 0s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+}
+
+.item-interact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-interact button {
+  color: whitesmoke;
+  background: rgba(8, 161, 41, 1);
+  border: 1px solid limegreen;
+  outline: none;
+  padding: 3px;
+  transition: all 0.5s ease 0s;
+  border-radius: 5px;
+}
+
+.item-interact button:hover {
+  background: rgba(8, 161, 41, 0.6);
+}
+
+.checkout {
+  color: gray;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid black;
+  padding: 10px;
+  height: 50vh;
+  border-radius: 10px;
+  position: fixed;
+  width: 50%;
+  top: 10%;
+  left: 50%;
+  margin: 5% 0 0 -25%;
+}
+
+.checkout-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+}
+
+.checkout-header button {
+  border: none;
+  background: none;
+  color: crimson;
+}
+
+.checkout-columns {
+  display: flex;
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.checkout-columns p {
+  flex-basis: 50%;
+}
+
+.checkout-rows {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.checkout-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.checkout-item p {
+  flex-basis: 50%;
+}
+
+.checkout-total {
+  display: flex;
+  margin: 10px;
+}
+
+.checkout-total p {
+  flex-basis: 50%;
+}
+
+.checkout-clear {
+  width: 100%;
+  margin: 10px;
+}
+
+.checkout-clear button {
+  padding: 5px;
+  border-radius: 5px;
+  background: rgba(8, 161, 41, 1);
+  border: 1px solid limegreen;
+  color: whitesmoke;
+}
+
+.checkout-clear button:hover {
+  background: rgba(8, 161, 41, 0.9);
+}
+
+@media (max-width: 680px) {
+  .header-content h1 {
+    font-size: 2.2rem;
   }
-  to {
-    transform: rotate(360deg);
+  .pages button {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .header-content {
+    padding-top: 2vh;
+  }
+  .header-content h1 {
+    margin-left: 0.5rem;
+    letter-spacing: 2px;
+    font-size: 2rem;
+  }
+
+  .item img {
+    height: 400px;
+    width: 100%;
+  }
+
+  .item-interact p {
+    display: flex;
+    align-items: center;
+  }
+
+  .item-interact button {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .header-content h1 {
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+  }
+  .pages button {
+    font-size: 1.2rem;
+  }
+  .item img {
+    height: 300px;
+  }
+  .landing-info {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-content h1 {
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+  }
+  .pages button {
+    font-size: 1.2rem;
+  }
+  .landing-info {
+    padding-bottom: 115px;
   }
 }
