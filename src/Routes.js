@@ -7,8 +7,8 @@ const Router = (props) => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={App} />
-        <Route exact path="/shop" component={Shop} />
+        <Route exact path={process.env.PUBLIC_URL + "/"} component={App} />
+        <Route exact path={process.env.PUBLIC_URL + "/shop"} component={Shop} />
         <Route exact path="/checkout" component={Checkout} />
       </Switch>
     </BrowserRouter>
