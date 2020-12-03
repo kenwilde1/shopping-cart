@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.edd1d929.chunk.css",
+    "main.js": "/shopping-cart/static/js/main.25f3343d.chunk.js",
+    "main.js.map": "/shopping-cart/static/js/main.25f3343d.chunk.js.map",
+    "runtime-main.js": "/shopping-cart/static/js/runtime-main.b56c1ee8.js",
+    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.b56c1ee8.js.map",
+    "static/js/2.7895be33.chunk.js": "/shopping-cart/static/js/2.7895be33.chunk.js",
+    "static/js/2.7895be33.chunk.js.map": "/shopping-cart/static/js/2.7895be33.chunk.js.map",
+    "index.html": "/shopping-cart/index.html",
+    "static/css/main.edd1d929.chunk.css.map": "/shopping-cart/static/css/main.edd1d929.chunk.css.map",
+    "static/js/2.7895be33.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.7895be33.chunk.js.LICENSE.txt",
+    "static/media/billie.24c15a34.png": "/shopping-cart/static/media/billie.24c15a34.png",
+    "static/media/nbalt.27906a27.jpeg": "/shopping-cart/static/media/nbalt.27906a27.jpeg",
+    "static/media/newbalance.b82fa979.jpeg": "/shopping-cart/static/media/newbalance.b82fa979.jpeg",
+    "static/media/nike.f6b032b7.jpg": "/shopping-cart/static/media/nike.f6b032b7.jpg",
+    "static/media/rick.c6f0d59f.jpg": "/shopping-cart/static/media/rick.c6f0d59f.jpg",
+    "static/media/spongebob.4a638752.jpg": "/shopping-cart/static/media/spongebob.4a638752.jpg",
+    "static/media/trainer.7d84b228.jpg": "/shopping-cart/static/media/trainer.7d84b228.jpg",
+    "static/media/vans.09d62998.jpeg": "/shopping-cart/static/media/vans.09d62998.jpeg",
+    "static/media/vans2.63b28987.jpeg": "/shopping-cart/static/media/vans2.63b28987.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b56c1ee8.js",
+    "static/js/2.7895be33.chunk.js",
+    "static/css/main.edd1d929.chunk.css",
+    "static/js/main.25f3343d.chunk.js"
+  ]
+}
